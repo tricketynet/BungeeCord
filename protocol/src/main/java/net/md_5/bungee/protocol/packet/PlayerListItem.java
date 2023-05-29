@@ -29,7 +29,7 @@ public class PlayerListItem extends DefinedPacket
             Item item = items[ 0 ] = new Item();
             item.displayName = item.username = readString( buf );
             action = !buf.readBoolean() ? Action.REMOVE_PLAYER : Action.ADD_PLAYER;
-            item.ping = buf.readShort();
+            item.ping = (int) buf.readShort();
         } else
         {
             action = Action.values()[ DefinedPacket.readVarInt( buf )];
