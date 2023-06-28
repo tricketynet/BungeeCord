@@ -5,7 +5,7 @@
 
     <groupId>net.md-5</groupId>
     <artifactId>bungeecord-parent</artifactId>
-    <version>1.19-R0.1-SNAPSHOT</version>
+    <version>1.20-R0.1-SNAPSHOT</version>
     <packaging>pom</packaging>
 
     <name>BungeeCord-Parent</name>
@@ -210,7 +210,7 @@
                             </rules>
                         </configuration>
                         <goals>
-                            <goal>enforce</goal>
+                            <!--<goal>enforce</goal>--> <!-- Disabled until maven-resolver is upgraded again. -->
                         </goals>
                     </execution>
                 </executions>
